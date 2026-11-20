@@ -37,7 +37,7 @@
         <a href="#about" data-i18n="nav_about">About</a>
         <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
         <a href="#journey" data-i18n="nav_journey">Journey</a>
-        <a href="#approach" data-i18n="nav_approach">Approach</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
       </nav>
       <div class="header-actions">
@@ -86,6 +86,37 @@
       </div>
     </section>
 
+
+    <section class="section section-paths" id="paths" aria-labelledby="paths-title">
+      <div class="shell">
+        <div class="paths-heading reveal">
+          <div><span class="section-number">↳</span><span class="section-tag" data-i18n="paths_tag">YOUR VISIT, YOUR WAY</span></div>
+          <h2 id="paths-title" data-i18n="paths_title">What brings you here?</h2>
+          <p data-i18n="paths_intro">Three starting points. Same curiosity.</p>
+        </div>
+        <div class="paths-grid">
+          <a class="path-card reveal" href="#contact">
+            <span class="path-top"><span class="path-icon" aria-hidden="true">↗</span><span class="path-number">01</span></span>
+            <strong data-i18n="path1_title">Let's work together.</strong>
+            <span class="path-description" data-i18n="path1_desc">Looking for an engineer to help build, integrate, or improve something useful?</span>
+            <span class="path-link"><span data-i18n="path1_link">Talk about a project</span><span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="path-card reveal" href="#projects">
+            <span class="path-top"><span class="path-icon" aria-hidden="true">{ }</span><span class="path-number">02</span></span>
+            <strong data-i18n="path2_title">Show me the engineering.</strong>
+            <span class="path-description" data-i18n="path2_desc">Here for the APIs, infrastructure, tests and decisions behind the scenes?</span>
+            <span class="path-link"><span data-i18n="path2_link">Explore selected projects</span><span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="path-card reveal" href="#journey">
+            <span class="path-top"><span class="path-icon" aria-hidden="true">✳</span><span class="path-number">03</span></span>
+            <strong data-i18n="path3_title">Just curious? Welcome.</strong>
+            <span class="path-description" data-i18n="path3_desc">Get to know how I think, how I've grown, and why I enjoy solving messy problems.</span>
+            <span class="path-link"><span data-i18n="path3_link">Follow the journey</span><span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-about" id="about" aria-labelledby="about-title">
       <div class="shell section-grid">
         <div class="section-side reveal"><span class="section-number">01 / 05</span><span class="section-tag" data-i18n="about_tag">A LITTLE ABOUT ME</span></div>
@@ -99,6 +130,15 @@
               <div class="about-signature"><span class="signature-mark" aria-hidden="true">↗</span><span data-i18n="about_signature">Curious by default. Practical by choice.</span></div>
             </div>
           </div>
+
+          <div class="about-code reveal" aria-label="A short Java-inspired introduction">
+            <div class="about-code-header"><span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>AboutMe.java</span><span class="code-label">100% HUMAN</span></div>
+            <pre><code><span class="syntax-key">class</span> <span class="syntax-type">Khoi</span> <span class="syntax-key">extends</span> <span class="syntax-type">Engineer</span> {
+  <span class="syntax-key">String</span> focus = <span class="syntax-string">"Backend · Cloud"</span>;
+  <span class="syntax-key">String</span> mindset = <span class="syntax-string">"Evidence over assumptions"</span>;
+  <span class="syntax-comment">// TODO: stay curious forever</span>
+}</code></pre>
+          </div>
         </div>
       </div>
     </section>
@@ -111,17 +151,17 @@
           <article class="expertise-card reveal">
             <div class="card-top"><span class="card-index">01</span><span class="card-glyph" aria-hidden="true">{ / }</span></div>
             <div><h3 data-i18n="exp1_title">Backend engineering</h3><p data-i18n="exp1_body">Clear service boundaries, thoughtful APIs, authentication, data modeling, and code built for maintenance — not just the first release.</p></div>
-            <div class="tech-list"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>JWT</span><span>MySQL</span></div>
+            <div class="tech-list"><span>Java</span><span>Spring Boot</span><span>Netty</span><span>REST APIs</span><span>MySQL</span></div>
           </article>
           <article class="expertise-card reveal">
             <div class="card-top"><span class="card-index">02</span><span class="card-glyph" aria-hidden="true">⌘</span></div>
             <div><h3 data-i18n="exp2_title">Cloud & infrastructure</h3><p data-i18n="exp2_body">Thinking past deployment day: infrastructure as code, safer permissions, delivery pipelines, and environments that are easier to understand and operate.</p></div>
-            <div class="tech-list"><span>AWS</span><span>Terraform</span><span>Docker</span><span>GitHub Actions</span><span>CI/CD</span></div>
+            <div class="tech-list"><span>AWS</span><span>Terraform</span><span>Docker</span><span>GitHub Actions</span><span>CloudWatch</span></div>
           </article>
           <article class="expertise-card reveal">
             <div class="card-top"><span class="card-index">03</span><span class="card-glyph" aria-hidden="true">✳</span></div>
             <div><h3 data-i18n="exp3_title">Product-minded delivery</h3><p data-i18n="exp3_body">Connecting backend decisions to real user flows, readable interfaces, automation, and small improvements that compound over time.</p></div>
-            <div class="tech-list"><span>TypeScript</span><span>Node.js</span><span>Next.js</span><span>React</span><span>Automation</span></div>
+            <div class="tech-list"><span>TypeScript</span><span>Node.js</span><span>Next.js</span><span>React</span><span>Playwright</span></div>
           </article>
         </div>
         <p class="expertise-footnote reveal"><span aria-hidden="true">↳</span><span data-i18n="expertise_note">I don't chase every new tool. I choose the one that fits the problem.</span></p>
@@ -155,6 +195,29 @@
           <article class="work-card reveal"><span class="work-shape" aria-hidden="true">◎</span><span class="work-label">04 / OPERATIONS</span><h3 data-i18n="work4_title">Clarity under pressure</h3><p data-i18n="work4_body">Useful logs, actionable reviews, maintainable systems, and the discipline to find evidence before claiming something is fixed.</p><div class="work-keywords">OBSERVABILITY <span>·</span> REVIEW <span>·</span> QUALITY</div></article>
         </div>
         <div class="private-note reveal"><span class="private-note-icon" aria-hidden="true">✳</span><p data-i18n="work_privacy">Much of my professional work belongs to private teams and codebases. I share the engineering problems and practices I've learned from — not client data or proprietary source code.</p></div>
+      </div>
+    </section>
+
+
+    <section class="section section-projects" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-top reveal"><div><span class="section-number">↳</span><span class="section-tag" data-i18n="projects_tag">PUBLIC WORK / ENGINEERING SAMPLES</span></div><span class="section-top-right" data-i18n="projects_top">What the code actually demonstrates</span></div>
+        <h2 class="section-headline reveal" id="projects-title"><span data-i18n="projects_h1">Ideas made</span> <span class="accent-text" data-i18n="projects_h2">tangible.</span></h2>
+        <div class="projects-list">
+          <article class="project-row reveal">
+            <div class="project-art art-travel" aria-hidden="true"><div class="art-travel-arc"></div><span class="art-small">01 / PRODUCT</span><span class="art-travel-icon">⌁</span><span class="art-bottom">MERIDIAN<br>TRAVEL</span></div>
+            <div class="project-info"><span class="project-category" data-i18n="project1_category">WEB PRODUCT / FULL STACK</span><h3>Meridian Travel</h3><p data-i18n="project1_body">An exploratory travel storefront: destination discovery, itinerary building, admin views and a separate authentication integration.</p><div class="project-chips"><span>Next.js</span><span>TypeScript</span><span>Auth integration</span></div><p class="project-status"><span class="status-indicator status-demo"></span><span data-i18n="project1_status">Public app code · booking persistence and email are still mock</span></p><a class="project-link" href="https://github.com/trminhkhoi76-code/meridian-travel-atlas" target="_blank" rel="noopener noreferrer"><span data-i18n="project_source">View source & scope</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-row reveal">
+            <div class="project-art art-auth" aria-hidden="true"><span class="art-small">02 / BACKEND</span><div class="auth-symbol"><span></span><span></span><span></span></div><span class="art-bottom">AUTH<br>SERVICE</span></div>
+            <div class="project-info"><span class="project-category" data-i18n="project2_category">BACKEND / AUTHENTICATION</span><h3>Auth Service</h3><p data-i18n="project2_body">A Java & Spring Boot authentication service with JWT, MySQL, Flyway, Testcontainers and an AWS-oriented development delivery pipeline.</p><div class="project-chips"><span>Java 21</span><span>Spring Boot</span><span>MySQL</span><span>Testcontainers</span></div><p class="project-status"><span class="status-indicator status-app"></span><span data-i18n="project2_status">Application and integration tests · AWS dev workflow requires validation</span></p><a class="project-link" href="https://github.com/trminhkhoi76-code/auth-service" target="_blank" rel="noopener noreferrer"><span data-i18n="project_source">View source & scope</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-row reveal">
+            <div class="project-art art-iac" aria-hidden="true"><span class="art-small">03 / CLOUD</span><div class="iac-lines"><i></i><i></i><i></i><i></i></div><span class="art-bottom">IAM<br>VERIFICATION</span></div>
+            <div class="project-info"><span class="project-category" data-i18n="project3_category">CLOUD / INFRASTRUCTURE AS CODE</span><h3>IAM Verification Lab</h3><p data-i18n="project3_body">A Terraform-based investigation environment to reason about deployment permissions, AWS resource coverage and honest verification evidence.</p><div class="project-chips"><span>AWS</span><span>Terraform</span><span>IAM</span><span>Verification</span></div><p class="project-status"><span class="status-indicator status-demo"></span><span data-i18n="project3_status">AWS-capable verification fixture · not a production system</span></p><a class="project-link" href="https://github.com/trminhkhoi76-code/verify-iam-policies" target="_blank" rel="noopener noreferrer"><span data-i18n="project_source">View source & scope</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <div class="projects-footer reveal"><p data-i18n="projects_note">A prototype is a prototype. A passing test is a passing test. Clear labels make better engineering stories.</p><a href="https://github.com/trminhkhoi76-code?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="projects_all">All public repositories</span> ↗</a></div>
       </div>
     </section>
 
