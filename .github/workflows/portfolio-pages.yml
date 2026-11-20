@@ -1,0 +1,79 @@
+name: Portfolio / GitHub Pages
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/verify-portfolio.mjs"
+      - ".github/workflows/portfolio-pages.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/verify-portfolio.mjs"
+      - ".github/workflows/portfolio-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: "Verify portfolio (static source only)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check docs/app.js
+          node --check scripts/verify-portfolio.mjs
+      - name: Validate pages, links and translations
+        run: node scripts/verify-portfolio.mjs
+      - name: Validate SVG and sitemap syntax
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          for file in ["docs/assets/favicon.svg", "docs/assets/social-preview.svg", "docs/sitemap.xml"]:
+              ET.parse(file)
+              print("XML OK:", file)
+          PY
+      - name: Evidence summary
+        run: |
+          echo "Static source check only; no browser, deployed HTTP or device QA was performed." >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    name: Deploy portfolio to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
