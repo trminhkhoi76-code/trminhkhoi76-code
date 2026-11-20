@@ -15,6 +15,11 @@
 
 </div>
 
+<p align="center">
+  <a href="https://trminhkhoi76-code.github.io/trminhkhoi76-code/"><strong>✳ Explore my interactive portfolio ↗</strong></a><br/>
+  <sub>My engineering journey · Selected projects · A little personality · EN / VI</sub>
+</p>
+
 ---
 
 ### 👨‍💻 A little about me
