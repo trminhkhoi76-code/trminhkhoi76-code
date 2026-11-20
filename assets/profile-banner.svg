@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Minh Khoi — backend, cloud and software engineering</title>
+  <desc id="desc">Dark navy banner with architectural nodes, highlighting reliable software engineering.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1225"/>
+      <stop offset="58%" stop-color="#121f3a"/>
+      <stop offset="100%" stop-color="#172c46"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#74e8e0"/>
+      <stop offset="100%" stop-color="#9aabff"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#46d8d3" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#46d8d3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <circle cx="1010" cy="155" r="240" fill="url(#glow)"/>
+  <g stroke="#9baac3" stroke-width="1" opacity=".10">
+    <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200"/>
+    <path d="M70 0V340M140 0V340M210 0V340M280 0V340M350 0V340M420 0V340M490 0V340M560 0V340M630 0V340M700 0V340M770 0V340M840 0V340M910 0V340M980 0V340M1050 0V340M1120 0V340"/>
+  </g>
+  <rect x="61" y="55" width="5" height="228" rx="2.5" fill="url(#accent)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="92" y="91" fill="#7bdedc" font-size="16" letter-spacing="3.4" font-weight="650">BACKEND  /  CLOUD  /  SOFTWARE ENGINEERING</text>
+    <text x="91" y="177" fill="#f6f9ff" font-size="66" font-weight="750" letter-spacing="-1.5">MINH KHOI</text>
+    <text x="94" y="222" fill="#c5d2e7" font-size="22">Building the things behind the</text>
+    <text x="94" y="257" fill="#a6f0e7" font-size="22" font-weight="650">“it just works.”</text>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="2.4" opacity=".8">
+    <path d="M835 112H909L954 81H1040"/>
+    <path d="M855 169H938L974 203H1093"/>
+    <path d="M836 247H912L947 221H1035"/>
+    <path d="M954 81V145H1069"/>
+    <path d="M974 203V260H1099"/>
+  </g>
+  <g fill="#132942" stroke="#87e5e8" stroke-width="2.2">
+    <rect x="813" y="96" width="43" height="32" rx="8"/>
+    <rect x="1039" y="65" width="38" height="32" rx="8"/>
+    <rect x="1034" y="129" width="61" height="32" rx="8"/>
+    <rect x="832" y="153" width="46" height="32" rx="8"/>
+    <rect x="1075" y="186" width="39" height="32" rx="8"/>
+    <rect x="812" y="231" width="49" height="32" rx="8"/>
+    <rect x="1017" y="205" width="45" height="32" rx="8"/>
+    <rect x="1082" y="245" width="37" height="32" rx="8"/>
+  </g>
+  <g fill="#c9ffff">
+    <circle cx="834" cy="112" r="4"/>
+    <circle cx="1058" cy="81" r="4"/>
+    <circle cx="1064" cy="145" r="4"/>
+    <circle cx="855" cy="169" r="4"/>
+    <circle cx="1094" cy="203" r="4"/>
+    <circle cx="836" cy="247" r="4"/>
+    <circle cx="1039" cy="221" r="4"/>
+    <circle cx="1100" cy="261" r="4"/>
+  </g>
+</svg>
